@@ -1,0 +1,185 @@
+<!--
+Copyright (c) 2025 The Solo Fortress 2 Team, all rights reserved.
+Licensed under the BSD 3-Clause License
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solo Fortress 2 Team - Solo Fortress 2</title>
+
+    <meta name="title" content="The Solo Fortress 2 Team - Solo Fortress 2" />
+    <meta name="description" content="Meet the team behind the Solo Fortress 2 mod." />
+    <meta property="og:title" content="The Solo Fortress 2 Team - Solo Fortress 2" />
+    <meta property="og:image" content="https://Solo-Fortress-2.github.io/assets/sf2_logo.png" />
+    <meta property="og:description" content="Meet the team behind the Solo Fortress 2 mod." />
+    <meta property="og:url" content="https://Solo-Fortress-2.github.io/members" />
+
+    <base href=".."/>
+    <link rel="icon" type="image/png" href="assets/sf2_icon.png" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="w-full min-h-screen flex flex-col flex-nowrap gap-10 bg-white dark:bg-slate-950 text-black dark:text-white overflow-auto">
+        <nav class="bg-purple-800 dark:bg-purple-900 text-white w-full">
+            <div class="max-w-6xl mx-auto px-4">
+                <ul class="flex items-center justify-center h-10 space-x-4">
+                    <li>
+                        <a class="block px-3 py-2 hover:bg-purple-900 dark:hover:bg-purple-950 hover:cursor-pointer transition-colors" href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="block px-3 py-2 hover:bg-purple-900 dark:hover:bg-purple-950 hover:cursor-pointer transition-colors" href="/members">
+                            Team members
+                        </a>
+                    </li>
+                    <li>
+                        <a class="block px-3 py-2 hover:bg-purple-900 dark:hover:bg-purple-950 hover:cursor-pointer transition-colors" href="/open-source">
+                            Open Source
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="w-full h-full p-2 flex flex-col flex-grow flex-nowrap text-center mt-10" id="main-content">
+            <div class="flex justify-center items-center text-center">
+                <img class="@min-xs:w-2xs md:w-2xl align-middle" alt="Solo Fortress 2 Logo" src="assets/sf2_logo.png" />
+            </div>
+
+            <div class="flex flex-col gap-6 mt-20">
+                <section class="flex flex-col justify-center items-center text-center p-2" id="about">
+                    <h2 class="text-3xl md:text-4xl font-semibold">
+                        Meet the <span class="text-purple-700">Team</span>
+                    </h2>
+                    <p class="mt-3 max-w-prose md:text-lg text-gray-500">
+                        Wanna know who is behind the development of Solo Fortress 2?
+                        Check them out here: 
+                    </p>
+                    <ul class="mt-2 text-left flex flex-row flex-wrap gap-2 justify-center items-center text-gray-500">
+                        <li>
+                            <div class="bg-purple-800 text-white p-2 rounded-lg w-48 h-72 flex flex-col gap-2 flex-nowrap" id="kelper">
+                                <img class="w-20 h-20 rounded" alt="Kepler" src="https://github.com/keplertf2.png?size=80" />
+                                <p class="text-lg font-semibold">KeplerTF2</p>
+
+                                <ul class="list-none flex flex-col flex-nowrap gap-1">
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-purple-600 pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">Lead Developer</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-green-400 pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">Programmer</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-red-400 pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">ModDB maintainer</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-white pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">GitHub Maintainer</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-purple-800 text-white p-2 rounded-lg w-48 h-72 flex flex-col gap-2 flex-nowrap" id="practicemedicine">
+                                <img class="w-20 h-20 rounded" alt="Kepler" src="https://github.com/practicemedicine.png?size=80" />
+                                <p class="text-lg font-semibold">PracticeMedicine</p>
+
+                                <ul class="list-none flex flex-col flex-nowrap gap-1">
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-green-400 pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">Programmer</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-red-400 pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">ModDB maintainer</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-white pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">GitHub Maintainer</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-purple-800 text-white p-2 rounded-lg w-48 h-72 flex flex-col gap-2 flex-nowrap" id="grub_pl">
+                                <img class="w-20 h-20 rounded" alt="Kepler" src="https://github.com/grubpl.png?size=80" />
+                                <p class="text-lg font-semibold">Grub PL</p>
+
+                                <ul class="list-none flex flex-col flex-nowrap gap-1">
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-purple-400 pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">Logo Designer</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-purple-800 text-white p-2 rounded-lg w-48 h-72 flex flex-col gap-2 flex-nowrap" id="sargeant_death">
+                                <img class="w-20 h-20 rounded" alt="Kepler" src="assets/sargeant_death.png" />
+                                <p class="text-lg font-semibold">Sargeant Death</p>
+
+                                <ul class="list-none flex flex-col flex-nowrap gap-1">
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-green-600 pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">Guy who does weapon balances</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bg-purple-800 text-white p-2 rounded-lg w-48 h-72 flex flex-col gap-2 flex-nowrap" id="snowy">
+                                <img class="w-20 h-20 rounded" alt="Kepler" src="https://github.com/snowywasbanned.png?size=80" />
+                                <p class="text-lg font-semibold">Snowy.vtf</p>
+
+                                <ul class="list-none flex flex-col flex-nowrap gap-1">
+                                    <li>
+                                        <div class="bg-purple-950 border-l-4 border-green-400 pl-2 px-2 py-1 rounded-r-lg">
+                                            <p class="text-gray-300">Programmer</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-purple-800 dark:bg-purple-900 text-black dark:text-white rounded-t-lg p-2 mt-20">
+            <div class="w-full flex flex-col justify-center items-center text-center">
+                <p class="max-w-prose text-gray-500 dark:text-gray-400 text-center">
+                    <img alt="Solo Fortress 2 Logo" src="assets/sf2_logo.png" 
+                    class="inline w-44 align-middle" />
+                </p>
+                <div class="flex gap-4 text-sm mt-2">
+                    <a href="https://moddb.com/mods/solo-fortress-2" class="hover:underline">ModDB</a>
+                    <a href="https://discord.gg/P3yvZvnN72" class="hover:underline">Discord</a>
+                    <a href="https://github.com/Solo-Fortress-2" class="hover:underline">GitHub</a>
+                </div>
+                <p class="max-w-prose text-xs text-gray-500 dark:text-gray-400 text-center mt-2">
+                    Copyright &copy; 2025 The Solo Fortress 2 Team, all rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
